@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQd1w=="
+      crossorigin="anonymous"
+      referrerploicey="no-refferrer"
+    />
+    <link rel="stylesheet" href="./ubung-style.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+    <title>Tornadu.Open</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#"> Web</a></div>
+        <ul class="links">
+          <li><a href="hero"> Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact"> Contact</a></li>
+        </ul>
+        <a href="#" class="action_btn"> Get started</a>
+        <div class="toggle_btn"><i class="fa-regular fa-bars"></i></div>
+      </div>
+      <div class="dropdown_menu open">
+        <li><a href="hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <a href="#" class="action_btn"> Get started</a>
+      </div>
+    </header>
+    <main>
+      <section  id="hero">
+        <h1> Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur,<br /> adipisicing elit. Nostrum, saepe.</p>
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-regular fa-xmark"
+          : "fa-regular fa-bars";
+      };
+    </script>
+  </body>
+</html>
