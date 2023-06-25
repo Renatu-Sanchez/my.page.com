@@ -1,1 +1,1 @@
-# my.page.com
+github-my.page.com
